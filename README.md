@@ -14,8 +14,8 @@ make -j6
 ```
 ./detect -e      [/path/to/your/engine/file]
          -v      [/path/to/your/video/file(or rtmp/rtsp stream address)]
-         -ip     [your server ip]
-         -port   [your server port]
+         -ip     [your server ip, see file Server.py]
+         -port   [your server port, see file Server.py]
          -name   [request name, see file Server.py]
          -conf   [confidence threshold]
          -nms    [NMS threshold]
