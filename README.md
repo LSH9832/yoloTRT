@@ -2,6 +2,13 @@
 
 主要给Nvidia Jetson系列嵌入式设备使用的，程序使用tensorrt推理模型，并将结果发送到服务器，接收demo见DataServer.py。
 网络输入输出适配于yolox。
+環境配置爲：
+
+- CUDA10.2
+- CUDnn8.0.0
+- TensorRT7.1.3 (安裝這個版本的TensorRT，在使用本項目已經給出的4個模型時保證不會報錯)
+- OpenCV
+- libcurl
 
 ## 安装
 ```
