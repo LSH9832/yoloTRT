@@ -9,7 +9,7 @@ post_name = "detect_result"                 # 发送json数据名称（http://ip
 fps = 30                                    # 推流最大帧率
 
 # 视频流地址（本地文件，RTSP/RTMP视频流）
-source = "~/Videos/6.mp4"
+source = "~/Videos/test.mp4"
 
 engine_file = "./model/vis7tiny.engine"         # TensorRT模型文件
 class_file = "./classes/vis7.txt"           # 类别名称文件，一行一个名称
