@@ -6,7 +6,7 @@
 
 - CUDA10.2
 - CUDnn8.0.0
-- TensorRT7.1.3 (安装这个版本的TensorRT，在使用本项目已经給出的4个时保证不会报错)
+- TensorRT7.1.3 (安装这个版本的TensorRT，在使用本项目已经给出的4个时保证不会报错)
 - OpenCV
 - libcurl
 
@@ -22,7 +22,7 @@ cd yolo_result_provider && sh setup.sh
          -no-push    stop pushing rtmp stream，列举此选项将不会进行推流
          -post       post json result(default false) 列举此选项将向服务器发送json数据，具体见DataServer.py
          -show       show image(default false), 列举此选项将在本地端显示图像
-         -repeat     repeat playing video(default false)，如果是圖像源是本地視頻，列举此項將重复播放
+         -repeat     repeat playing video(default false)，如果是图像源是本地视频，列举此项将重复播放
          -v          /path/to/your/video_file or rtsp/rtmp stream 图像源，可以是本地视频，也可以是rtsp/rtmp视频流
          -conf       confidence threshold between 0-1(default 0.25)，置信度阈值
          -nms        NMS threshold between 0-1(default 0.45) NMS阈值
