@@ -2,11 +2,11 @@
 
 主要给Nvidia Jetson系列嵌入式设备使用的，程序使用tensorrt推理模型，并将结果发送到服务器，接收demo见DataServer.py。
 网络输入输出适配于yolox。
-環境配置爲：
+环境配置为：
 
 - CUDA10.2
 - CUDnn8.0.0
-- TensorRT7.1.3 (安裝這個版本的TensorRT，在使用本項目已經給出的4個模型時保證不會報錯)
+- TensorRT7.1.3 (安装这个版本的TensorRT，在使用本项目已經給出的4个时保证不会报错)
 - OpenCV
 - libcurl
 
@@ -19,13 +19,13 @@ cd yolo_result_provider && sh setup.sh
 ## 使用
 ```
 ./detect -e          /path/to/your/tensorrt_engine_file, 在model文件夾中已經提供了四個engine文件
-         -no-push    stop pushing rtmp stream，列舉此選項將不會進行推流
-         -post       post json result(default false) 列舉此項將向服務器發送json數據，具體見DataServer.py
-         -show       show image(default false), 列舉此項將在本地端顯示圖像
-         -repeat     repeat playing video(default false)，如果是圖像源是本地視頻，列舉此項將重復播放
-         -v          /path/to/your/video_file or rtsp/rtmp stream 圖像源，可以是本地視頻，也可以是rtsp/rtmp視頻流
-         -conf       confidence threshold between 0-1(default 0.25)，置信度閾值
-         -nms        NMS threshold between 0-1(default 0.45) NMS閾值
+         -no-push    stop pushing rtmp stream，列举此选项将不会进行推流
+         -post       post json result(default false) 列举此选项将向服务器发送json数据，具体见DataServer.py
+         -show       show image(default false), 列举此选项将在本地端显示图像
+         -repeat     repeat playing video(default false)，如果是圖像源是本地視頻，列举此項將重复播放
+         -v          /path/to/your/video_file or rtsp/rtmp stream 图像源，可以是本地视频，也可以是rtsp/rtmp视频流
+         -conf       confidence threshold between 0-1(default 0.25)，置信度阈值
+         -nms        NMS threshold between 0-1(default 0.45) NMS阈值
          -size       input size of images, wrong size will cause error(default 640, 416 if tiny-model or nano-model)
          -ip         rtmp server ip(default 127.0.0.1)
          -port       rtmp server port(default 1935)
@@ -34,9 +34,9 @@ cd yolo_result_provider && sh setup.sh
          -b          bit rate(default 4000000)
          -name       rtmp name(default live/test)  example: rtmp://ip:port/live/test
          -post-name  post json result name(default detect_result) example: http://ip:postport/post-name?data
-         -clsfile    class file name(default classes.txt), 類別文件，見文件夾classes中的兩個文件
+         -clsfile    class file name(default classes.txt), 类别文件，见文件夾classes中的两个文件
 
 # for more details
 ./detect -h
 ```
-### 如果覺得每次在命令行中輸入這麼多參數太麻煩，可以運行run.py文件代替detect,只需要在run.py文件中將相應的參數進行修改即可。
+### 如果觉得每次在命令行中输入这么多参数太麻烦，可以运行run.py文件代替detect,只需要在run.py文件中将相应的参数进行修改即可。
