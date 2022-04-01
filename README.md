@@ -6,7 +6,7 @@
 
 - CUDA10.2
 - CUDnn8.0.0
-- TensorRT7.1.3 (安装这个版本的TensorRT，在使用本项目已經給出的4个时保证不会报错)
+- TensorRT7.1.3 (安装这个版本的TensorRT，在使用本项目已经給出的4个时保证不会报错)
 - OpenCV
 - libcurl
 
