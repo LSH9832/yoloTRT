@@ -2,6 +2,13 @@
 
 主要给Nvidia Jetson系列嵌入式设备使用的，程序使用tensorrt推理模型，并将结果发送到服务器，接收demo见DataServer.py。
 网络输入输出适配于yolox。
+
+```
+input [1, 3, input_size, input_size] RGB image
+                  ↓
+output [m, 5 + n] matrix → [m: total num of grid cell, 5 + n: cx, cy, w, h, conf_obj, conf_class_1, ... , conf_class_n]
+```
+
 环境配置为：
 
 - CUDA10.2
