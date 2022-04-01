@@ -31,7 +31,7 @@ cd yolo_result_provider && sh setup.sh
          -port       rtmp server port(default 1935)
          -post-port  request server port(default 80)
          -fps        stream rate(default 30)
-         -b          bit rate(default 4000000)
+         -b          bitrate(default 4000000)
          -name       rtmp name(default live/test)  example: rtmp://ip:port/live/test
          -post-name  post json result name(default detect_result) example: http://ip:postport/post-name?data
          -clsfile    class file name(default classes.txt), 类别文件，见文件夾classes中的两个文件
